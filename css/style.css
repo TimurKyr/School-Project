@@ -1,178 +1,105 @@
-body{
+body {
+    background-color: #FFF5DA;
     margin: 0;
     width: 1920px;
-    height: 1789px;
-    background-color: rgba(255, 245, 218, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
 }
-.menu{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
 
-    position: absolute;
-    width: 300px;
-    height: 20.29px;
-    left: 965px;
-    top: 24.35px;
-}
-.menuLink{
-    position: static;
-    /* width: 79px;
-    height: 20px;
-    left: 221px;
-    top: 0px; */
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 0px 40px;
-}
-.menuLink:hover{
-    color: #fff;
-    background-color: #262626;
-    border-radius: 15px;
-}
-.profile {
-    position: absolute;
-    width: 99.61px;
-    height: 50px;
-    left: 1434px;
-    top: 2px;
-}
-.signIn {
-    /* top: 50%; */
-    position: static;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    vertical-align: middle;
-    color: #000000; 
-}
-.logoName{
-    position: absolute;
-    width: 50px;
-    height: 18.26px;
-    left: 356px;
-    top: 25.36px;
-
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-
-    color: #000000;
-}
-.flex{
+.flex {
     display: flex;
 }
-.header{
-    position: absolute;
-    width: 1920px;
-    height: 70px;
-    left: 0px;
-    top: 0px;
+
+.standard-padding {
+    padding: 0 305px;
+}
+
+.header {
     background-color: rgba(78, 154, 154, 1);
-    /* Домашка: Изменить размеры и цвет */
-    /* box-shadow: 5px 5px 20px 2px rgb(155, 39, 155); */
-}
-.centered{
-    justify-content: center;
-    align-content: center;
-}
-.w-full {
-    width: 100%;
-}
-.w-half{
-    width: 50%; 
-    /* От родителя, а не от экрана */
-}
-.text-center{
-    text-align: center;
-}
-
-.mb-50{
-    margin-bottom: 50px;
-}
-.mb-15{
-    margin-bottom: 15px;
-}
-
-.mb-500{
-    margin-bottom: 500px !important;
-}
-.p-15{
-    padding: 15px;
-}
-.ps-100{
-    padding: 15px 20% 15px 20%;
-}
-.bg-dark{
-    background-color: #262626;
-}
-.grid{
-    /* Вопрос 1: Что здесь происходит?  */
-    display: grid;
-    /* Вопрос 1: Что здесь происходит?  */
-    grid-template-columns: 1fr 6fr 3fr;
-    /* Вопрос 1: Что здесь происходит?  */
-    grid-template-rows: auto;
-    /* Вопрос 1: Что здесь происходит?  */
-    gap: 15px;
+    margin-bottom: 38px;
+    height: 70px;
     align-items: center;
 }
 
-.kvadrat{
-    background-color: red;
-    width: 100px;
-    height: 100px;
-    /* Вопрос 2: Что здесь происходит?  */
-    position: absolute;
-}
-#cardBox{
-    padding: 0 30%;
-}
-.cardPrice{
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 15px 30px;
-}
-.circle{
-    background-color: skyblue;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
+.grid {
+    display: grid;
+    grid-template-columns: 6fr 4.5fr 1.5fr;
 }
 
-@media only screen and (max-width:1200px){
-    #postBox {
-        padding: 30%;
-    }
+.menuLink{
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    /* padding: 0 15px; */
+    margin: 0 20px;
+    font-weight: 400;
+    line-height: 20px;
 }
-@media only screen and (max-width:600px){
-    #postBox {
-        padding: 10%;
-    }
+
+.intro {
+    background: #DAC88A;
+    height: 600px;
+    padding: 0 220px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.intro-content {
+    align-items: center;
+}
+
+.map {
+    margin-right: 40px;
+}
+
+.signIn-card {
+    width: 435px;
+    height: 300px;
+
+    background: rgba(255, 245, 218, 1);
+    
+    border-radius: 20px;
+    margin-left: 40px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+ 
+.signIn-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.signUp-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+.signIn-btn {
+    display: flex;
+    background: rgba(78, 154, 154, 1);
+    color: #000;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 150px;
+    height: 45px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUp {
+    color: #000;
+    font-size: 16px;
+}
+
+.content-box {
+    height: 875px;
+    background: #DAC88A;
+}
+
+.footer {
+    background-color: rgba(78, 154, 154, 1);
+    height: 210px;
+    align-items: center;
 }
