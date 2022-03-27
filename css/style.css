@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    width: 1920px;
+    height: 1789px;
+    background-color: rgba(255, 245, 218, 1);
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 300px;
+    height: 20.29px;
+    left: 965px;
+    top: 24.35px;
+}
+.menuLink{
+    position: static;
+    /* width: 79px;
+    height: 20px;
+    left: 221px;
+    top: 0px; */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 40px;
+}
+.menuLink:hover{
+    color: #fff;
+    background-color: #262626;
+    border-radius: 15px;
+}
+.profile {
+    position: absolute;
+    width: 99.61px;
+    height: 50px;
+    left: 1434px;
+    top: 2px;
+}
+.signIn {
+    /* top: 50%; */
+    position: static;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    vertical-align: middle;
+    color: #000000; 
+}
+.logoName{
+    position: absolute;
+    width: 50px;
+    height: 18.26px;
+    left: 356px;
+    top: 25.36px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.flex{
+    display: flex;
+}
+.header{
+    position: absolute;
+    width: 1920px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(78, 154, 154, 1);
+    /* Домашка: Изменить размеры и цвет */
+    /* box-shadow: 5px 5px 20px 2px rgb(155, 39, 155); */
+}
+.centered{
+    justify-content: center;
+    align-content: center;
+}
+.w-full {
+    width: 100%;
+}
+.w-half{
+    width: 50%; 
+    /* От родителя, а не от экрана */
+}
+.text-center{
+    text-align: center;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mb-500{
+    margin-bottom: 500px !important;
+}
+.p-15{
+    padding: 15px;
+}
+.ps-100{
+    padding: 15px 20% 15px 20%;
+}
+.bg-dark{
+    background-color: #262626;
+}
+.grid{
+    /* Вопрос 1: Что здесь происходит?  */
+    display: grid;
+    /* Вопрос 1: Что здесь происходит?  */
+    grid-template-columns: 1fr 6fr 3fr;
+    /* Вопрос 1: Что здесь происходит?  */
+    grid-template-rows: auto;
+    /* Вопрос 1: Что здесь происходит?  */
+    gap: 15px;
+    align-items: center;
+}
+
+.kvadrat{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    /* Вопрос 2: Что здесь происходит?  */
+    position: absolute;
+}
+#cardBox{
+    padding: 0 30%;
+}
+.cardPrice{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.circle{
+    background-color: skyblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width:1200px){
+    #postBox {
+        padding: 30%;
+    }
+}
+@media only screen and (max-width:600px){
+    #postBox {
+        padding: 10%;
+    }
+}
