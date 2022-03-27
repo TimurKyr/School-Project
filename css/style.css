@@ -1,7 +1,6 @@
 body {
     background-color: #FFF5DA;
     margin: 0;
-    width: 1920px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -53,7 +52,7 @@ body {
 
 .signIn-card {
     width: 435px;
-    height: 300px;
+    height: 350px;
 
     background: rgba(255, 245, 218, 1);
     
@@ -93,11 +92,17 @@ body {
 }
 
 .content-box {
-    height: 875px;
+    justify-content: center;
+    height: 1000px;
+    margin-left: 5%;
+    margin-right: 5%;
     background: #DAC88A;
+    font-size: 200px;
+    text-align: center;
 }
 
 .footer {
+    margin-top: 10%;
     background-color: rgba(78, 154, 154, 1);
     height: 210px;
     align-items: center;
